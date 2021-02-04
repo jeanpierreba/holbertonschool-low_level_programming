@@ -1,0 +1,1 @@
+starting with conditions in C
