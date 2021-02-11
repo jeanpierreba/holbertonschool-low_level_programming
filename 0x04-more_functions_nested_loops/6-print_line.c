@@ -1,5 +1,10 @@
 #include "holberton.h"
 
+/**
+ * print_line - draws a straight line
+ * @n: number of lines
+ */
+
 void print_line(int n)
 {
 	int a;
