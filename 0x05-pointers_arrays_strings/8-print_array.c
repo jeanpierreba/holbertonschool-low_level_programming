@@ -8,15 +8,17 @@
 
 void print_array(int *a, int n)
 {
-	for (n = 0; n < 5; n++)
+	int c;
+
+	for (c = 0; c < n; c++)
 	{
-		if (n == 0)
+		if (c == 0)
 		{
-		printf("%d", a[n]);
+		printf("%d", a[c]);
 		}
 		else
 		{
-			printf(", %d", a[n]);
+			printf(", %d", a[c]);
 		}
 	}
 	printf("\n");
