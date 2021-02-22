@@ -17,10 +17,6 @@ char *_strchr(char *s, char c)
 
 	while (s[i] != 0)
 	{
-		if (s[i] != c && s[i] == '\0')
-		{
-			return (NULL);
-		}
 		if (s[i] == c)
 		{
 			break;
@@ -36,4 +32,9 @@ char *_strchr(char *s, char c)
 		j++;
 	}
 	return (s);
+	
+	if (s[i] == '\0' && s[i] != c)
+	{
+		return (NULL);
+	}
 }
