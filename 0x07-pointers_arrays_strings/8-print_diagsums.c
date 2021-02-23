@@ -1,10 +1,11 @@
 #include "holberton.h"
+#include <stdio.h>
+
 /**
  * print_diagsums - print the sum of the two diagonals
  * @a: array
  * @size: size of the array
  */
-
 
 void print_diagsums(int *a, int size)
 {
@@ -19,6 +20,7 @@ void print_diagsums(int *a, int size)
 	{
 		num1 += a[(size * i) + 1];
 		num2 += a[(size * (i + 1)) - (i + 1)];
+		i++;
 	}
 	printf("%d, %d\n", num1, num2);
 }
