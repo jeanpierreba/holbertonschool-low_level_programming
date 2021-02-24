@@ -19,6 +19,7 @@ int sqrt_recursion2(int b, int c)
 	return (sqrt_recursion2(b, c + 1));
 }
 
+
 /**
  * _sqrt_recursion - calculate the natural square root of
  * of a given number
