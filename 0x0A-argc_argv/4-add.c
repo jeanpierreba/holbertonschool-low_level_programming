@@ -37,22 +37,22 @@ int number(char *s)
 
 int main(int argc, char **argv)
 {
-	int i, n, ex;
+	int i, sum, j;
 
-	ex = 0, n = 0;
+	j = 0, sum = 0;
 	if (argc > 1)
 	{
 		for (i = 1; i < argc; i++)
 		{
-			if (_isnumber(argv[i]))
-				n += atoi(argv[i]);
+			if (number(argv[i]))
+				sum += atoi(argv[i]);
 			else
-				ex = 1;
+				j = 1;
 		}
 	}
-	if (ex == 0)
-		printf("%i\n", n);
+	if (j == 0)
+		printf("%i\n", sum);
 	else
 		printf("%s\n", "Error");
-	return (ex);
+	return (j);
 }
