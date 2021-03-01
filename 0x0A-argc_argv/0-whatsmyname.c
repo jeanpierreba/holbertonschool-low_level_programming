@@ -1,6 +1,13 @@
 #include <stdio.h>
 
-int main(int argc, char* argv[])
+/**
+ * main - prints the name of the program
+ * @argc: number of command lines arguments
+ * @argv: array containing the program line argument
+ * Return: 0
+ */
+
+int main(int argc, char *argv[])
 {
 	int count;
 
