@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "holberton.h"
 
 /**
  * main - print numbers form 0 to 100,
@@ -31,4 +32,6 @@ int main(void)
 		}
 	}
 	printf("\n");
+
+	return (0);
 }
