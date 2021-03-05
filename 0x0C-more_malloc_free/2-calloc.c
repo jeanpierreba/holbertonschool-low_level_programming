@@ -24,6 +24,13 @@ char *_memset(char *s, char b, unsigned int n)
 	return (s);
 }
 
+/**
+ * _calloc - allocate memory for an array
+ * @nmemb: number of elements of the array
+ * @size: size
+ * Return: pointer to allocate memory, if fails return NULL
+ */
+
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	char *p;
