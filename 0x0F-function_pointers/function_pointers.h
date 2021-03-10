@@ -1,5 +1,5 @@
-#ifndef function_pointer_H
-#define function_pointer_H
+#ifndef FUNCTIONP_H
+#define FUNCTIONP_H
 
 void print_name(char *name, void (*f)(char *));
 void array_iterator(int *array, size_t size, void (*action)(int));
