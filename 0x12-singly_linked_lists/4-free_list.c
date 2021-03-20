@@ -7,7 +7,7 @@
 
 void free_list(list_t *head)
 {
-	unsigned int *tmp;
+	list_t *tmp;
 
 	while (head != NULL)
 	{
