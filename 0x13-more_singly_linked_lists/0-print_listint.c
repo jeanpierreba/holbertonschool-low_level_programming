@@ -8,7 +8,7 @@
 
 size_t print_listint(const listint_t *h)
 {
-	int nnode;
+	size_t nnode;
 
 	for (nnode = 0; h != NULL; nnode++)
 	{
