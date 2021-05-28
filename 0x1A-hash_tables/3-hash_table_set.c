@@ -1,5 +1,13 @@
 #include "hash_tables.h"
 
+/**
+* hash_table_set - adds a new element to a hash table
+* @ht: hash table where we want to add something
+* @key: key for the hash table
+* @value: value of the key
+* Return: 1 if succeed or 0 if fails
+*/
+
 int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 {
 	hash_node_t *hash_n = NULL, *collision_n = NULL;
