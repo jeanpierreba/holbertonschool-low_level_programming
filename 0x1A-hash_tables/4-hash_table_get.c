@@ -6,14 +6,13 @@
 * @key: key where we will get te value from
 * Return: the value associated with the key or NULL if fails
 */
-
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	hash_table_t *hash_n = NULL;
+	hash_node_t *hash_n = NULL;
 	unsigned long int index;
 
-	if (ht == NULL || key == NULL || key[0] == NULL)
-		return (NULL)
+	if (ht == NULL || key == NULL || !key[0])
+		return (NULL);
 
 	index = key_index((unsigned char *)key, ht->size);
 	hash_n = ht->array[index];
